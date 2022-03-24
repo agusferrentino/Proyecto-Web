@@ -1,0 +1,7 @@
+anclas
+en el href pongo #nombre de id
+
+se va a mover a la cosa donde yo tenga un id seteado
+<a href="#container">container</a>
+
+    <div id="container"></div>
