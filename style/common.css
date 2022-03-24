@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*MENU*/
+.menuTitulo{
+    text-align: center;
+}
+.pedirMenu{
+    color: antiquewhite;
+    background-color: #361C0A;
+    padding: 2px;
+    margin: 4px 1px 200px 2px;
+}
+.contenedorMenu{
+    display: flex;
+    justify-content: center;
+    
+}
+.menuGeneral{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 400vh;
+    width: 70vw;
+    grid-template-areas: 
+    "ef ec"
+    "tarta ensalada"
+    "porciones menuEsp"
+    "mila SandwHambur"
+    "carne ave"
+    "cerdo pescado"
+    "parrilla cociolla"
+    "pizza pasta"
+    "empanada postre"
+    "especial especial";
+}
+.menuGeneral ul{
+    list-style: square;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.menuGeneral li{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 6px 0px 6px 0px;
+    color: aliceblue;
+}
+.opcionesMenu{
+    list-style: disc;
+    padding-left: 20px;
+}
+.menuGeneral h3{
+    text-align: center;
+    color: antiquewhite;
+    background-color: #753D15;
+    border-radius: 10px;
+    padding: 5px;
+}
+.entradasFrias{
+    
+    padding: 20px;
+    background-color: #DB7227;
+    grid-area: ef;
+}
+.entradasCalientes{
+    background-color: #DB7227;
+    grid-area: ec;
+    padding: 20px;
+}
+.tartas{
+    background-color: #DB7227;
+    grid-area: tarta;
+    padding: 20px;
+}
+.ensaladas{
+    background-color: #DB7227;
+    grid-area: ensalada;
+    padding: 20px;
+}
+.porciones{
+    background-color: #DB7227;
+    grid-area: porciones;
+    padding: 20px;
+}
+.menuEspecial{
+    background-color: #DB7227;
+    grid-area: menuEsp;
+    padding: 20px;
+    
+}
+.milanesas{
+    background-color: #DB7227;
+    grid-area: mila;
+    padding: 20px;
+}
+.hamburg-Sandwich{
+    background-color: #DB7227;
+    grid-area: SandwHambur;
+    padding: 20px;
+}
+.carnes{
+    background-color: #DB7227;
+    grid-area: carne;
+    padding: 20px;
+}
+.aves{
+    padding: 20px;
+    background-color: #DB7227;
+    grid-area: ave;
+    
+}
+.cerdo{
+    background-color: #DB7227;
+    grid-area: cerdo;
+    padding: 20px;
+}
+.pescado{
+    background-color: #DB7227;
+    grid-area: pescado;
+    padding: 20px;
+}
+.parrilla{
+    background-color: #DB7227;
+    grid-area: parrilla;
+    padding: 20px;
+}
+.cocina-olla{
+    background-color: #DB7227;
+    grid-area: cociolla;
+    padding: 20px;
+}
+.pizzas{
+    background-color: #DB7227;
+    grid-area: pizza;
+    padding: 20px;
+}
+.pastas{
+    background-color: #DB7227;
+    grid-area: pasta;
+    padding: 20px;
+}
+.empanadas{
+    background-color: #DB7227;
+    grid-area: empanada;
+    padding: 20px;
+}
+.postres{
+    background-color: #DB7227;
+    grid-area: postre;
+    padding: 20px;
+}
+.especialFusion{
+    background-color: #DB7227;
+    grid-area: especial;
+    padding: 20px;
+}
+
+
+/*FIN MENU*/
+
+
+/*NOTICIAS*/
+
+.noti{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.articuloNoticia{
+    background-color: rgb(255, 222, 112);
+    width: 20vw;
+    height: 40vh;
+    margin: 0px 0px 5px 5px;
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 4px;
+}
+.articuloNoticia section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articuloNoticia section h4{
+    background-color: rgb(175, 175, 175);
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.articuloNoticia section img{
+    border-radius: 2px;
+    padding: 8px;
+}
+/*FIN NOTICIAS*/
+
+
+
+
+/* NAVBAR */
+header{
+    height: 10vh;
+}
+nav{
+    position: fixed;
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(6deg, rgba(2,0,36,1) 0%, rgba(221,123,33,1) 0%, rgba(255,138,0,1) 52%, rgba(255,157,0,1) 81%, rgba(255,210,109,1) 100%);
+    border: 1px solid black;
+    
+    width: 100vw;
+}
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+.opciones ul{
+    display: flex;
+    
+    margin-left:10vw ;
+}
+
+nav .log{
+    display: flex;
+    justify-content: flex-end;
+    top: 1px;
+    height:10vh;
+    width: 20vw;
+}
+nav .opciones ul li{
+    padding: 0px 20px 0px 0px;
+    
+    
+}  
+nav .opciones ul li a{
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(56, 55, 52);
+}
+
+/* FIN NAVBAR */
+
+/* FORMULARIO CONTACTO */
+
+.parteAbajoCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parteAbajoCont h3{
+    color: aliceblue;
+    background-color: #361C0A;
+    border-radius: 5px;
+    padding: 2px;
+}
+.formulario{
+    border-radius: 10px;
+    background-color: #361C0A;
+    width: 20vw;
+    height: 50vh;
+    
+}
+.formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.maps{
+    width: 100%;
+    height: 400px;
+}
+#formCont{
+    text-align: center;
+}
+.formulario form label{
+    
+    color: aliceblue;
+}
+.formulario form input{
+    border-radius: 8px;
+    background-color: rgb(180, 180, 180);
+}
+.formulario form textarea{
+    border-radius: 8px;
+    background-color: rgb(180, 180, 180);
+}
+.formulario form #enviar{
+    margin-top: 1vh;
+    color: rgb(0, 0, 0);
+    background-color: rgb(219, 153, 29);
+    border: 2px solid black;
+    
+    border-radius: 8px;
+    width: 10vw;
+    
+}
+.formulario form #enviar:hover{
+    background-color: #DB7227;
+}
+.pedya{
+    color: white;
+    background-color: rgb(180, 20, 20);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.whatsapp{
+    color: white;
+    background-color: rgb(17, 194, 61);
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+/* FIN FORMULARIO CONTACTO */
+/*INDEX*/
+.mainIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainIndex section{
+    margin: 4px;
+    background-color: rgb(175, 173, 167);
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.bajoIndex{
+    text-align: center;
+}
+/*FIN INDEX*/
+/*SobreNOS*/
+.backNos{
+    height: 82vh;
+}
+/*FIN SobreNOS*/
+/* GENERAL STUFF */
+.whatsappBoton{
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+}
+.whatsappBoton a img{
+    height: 120px;
+    width: 140px;
+}
+.titulo {
+    color: beige;
+    background-color: #B55E21;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px 0px 5px 0px;
+}
+header{
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+/*linear-gradient(6deg, rgba(2,0,36,1) 0%, rgba(221,123,33,1) 0%, rgba(255,210,109,1) 100%);*/
+body{
+    background: rgb(2,0,36);
+    background:#74552d;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: rgb(7, 12, 8);
+    
+}
+
+
+
+.botonera{
+    margin: 15px 0px 10px 5px;
+}
+
+footer{
+    background-color: #B55E21;
+    height: 8vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h2{
+
+}
+footer p{
+    font-weight: bold;
+}
+
+.imagen{
+    width: 100px;
+    height: 100px;
+}
+/*IMPLEMENTACION MOBILE*/
+
+@media screen and (max-width: 844px) {
+    /*SobreNOS*/
+    .backNos{
+        height: 84vh;
+    }
+    /*FIN SobreNOS*/
+    /*NAV RESPONSIVE*/
+    header{
+        height: 25vh;
+    }
+    nav{
+       
+    }
+    .opciones{
+        width: 50vw;
+    }
+    .opciones ul{
+        flex-direction: column;
+    }
+    .opciones ul li{
+        padding: 6px;
+        margin-bottom: 8px;
+    }
+    .opciones ul li a{
+        color: rgb(251, 251, 251);
+        background-color: rgb(255, 255, 255);
+        border-radius: 6px;
+        border: 2px solid black;
+        
+    }
+    nav .log{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 50vw;
+        height: 25vh;
+        
+        
+    }
+    nav .log img{
+        width: 30vw;
+        height: 15vh;
+    }
+    /*FIN NAV RESPONSIVE*/
+    /*CONTACTO RESPONSIVE*/
+    .dataCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dataCont .direccionFusion{
+        color: aliceblue;
+    }
+    .formulario{
+        width: 60vw;
+        height: 34vh;
+    }
+    .formulario form #enviar{
+        width: 25vw;
+    }
+    /*FIN CONTACTO RESPONSIVE*/
+
+    /*GENERAL STUFF*/
+    .whatsappBoton{
+        position: fixed;
+        right: 1px;
+        bottom: 60px;
+    }
+    .whatsappBoton a img{
+        height: 90px;
+        width: 100px;
+        
+    }
+    /*FIN GENERAL STUFF*/
+    /*NOTICIAS*/
+    .noti{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .articuloNoticia{
+        width: 90vw;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .articuloNoticia section img{
+        border-radius: 20px;
+        height: 15vh;
+        width: 50vw;
+    }
+    /*FIN NOTICIAS*/
+    /*MENU*/
+    .fondoMenu{
+        height: 880vh;
+    }
+    .menuGeneral{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(18, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+        height: 400vh;
+        width: 95vw;
+        grid-template-areas: 
+        "ef"
+        "ec"
+        "tarta"
+        "ensalada"
+        "porciones"
+        "menuEsp"
+        "mila"
+        "SandwHambur"
+        "carne"
+        "ave"
+        "cerdo"
+        "pescado"
+        "parrilla"
+        "cociolla"
+        "pizza"
+        "pasta"
+        "empanada"
+        "postre"
+        "especial";
+    }
+}
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+
